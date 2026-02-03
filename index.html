@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pro Gamerz 3 | Official Website</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+:root {
+  --bg: #000;
+  --card: #111;
+  --accent: #1e90ff;
+  --text: #fff;
+  --muted: #aaa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #000, #0c0c0c);
+  color: var(--text);
+}
+
+/* HERO */
+header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.hero {
+  animation: fadeUp 1.2s ease;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.hero span {
+  color: var(--accent);
+}
+
+.hero p {
+  margin-top: 20px;
+  color: var(--muted);
+  max-width: 720px;
+  font-size: 1.15rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 14px 38px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+  background: #0b6bdc;
+}
+
+/* SECTION */
+section {
+  padding: 100px 8%;
+}
+
+.title {
+  font-size: 2.6rem;
+  margin-bottom: 20px;
+}
+
+.sub {
+  color: var(--muted);
+  max-width: 620px;
+  margin-bottom: 60px;
+}
+
+/* STATS */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 24px;
+  padding: 40px;
+  transition: 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-12px);
+}
+
+.card h3 {
+  font-size: 2.2rem;
+  color: var(--accent);
+}
+
+.card p {
+  margin-top: 10px;
+  color: var(--muted);
+}
+
+/* CONTACT */
+.links a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--text);
+  text-decoration: none;
+  margin-bottom: 18px;
+  font-size: 1.15rem;
+  transition: 0.3s;
+}
+
+.links a i {
+  font-size: 1.4rem;
+  color: var(--accent);
+}
+
+.links a:hover {
+  color: var(--accent);
+}
+
+/* FOOTER */
+footer {
+  padding: 60px 8%;
+  border-top: 1px solid #222;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+footer p {
+  color: var(--muted);
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media(max-width: 768px) {
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<header>
+  <div class="hero">
+    <h1>Pro <span>Gamerz 3</span></h1>
+    <p>
+      Professional gaming content creator from India with 4+ years of experience.
+      Creating high-quality and consistent gaming content on YouTube.
+    </p>
+    <a href="https://youtube.com/@pro_gamerz_3" target="_blank" class="btn">
+      <i class="fa-brands fa-youtube"></i> Visit YouTube Channel
+    </a>
+  </div>
+</header>
+
+<!-- STATS -->
+<section>
+  <h2 class="title">Channel Overview</h2>
+  <p class="sub">Samsung-inspired flagship design. Clean. Powerful. Professional.</p>
+
+  <div class="stats">
+    <div class="card"><h3>200+</h3><p>Subscribers</p></div>
+    <div class="card"><h3>10+</h3><p>Uploads</p></div>
+    <div class="card"><h3>4+</h3><p>Years Experience</p></div>
+    <div class="card"><h3>India</h3><p>Creator Location</p></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section>
+  <h2 class="title">Connect With Me</h2>
+  <p class="sub">Business inquiries, sponsorships, and collaborations.</p>
+
+  <div class="links">
+    <a href="https://youtube.com/@pro_gamerz_3" target="_blank">
+      <i class="fa-brands fa-youtube"></i> YouTube – Pro Gamerz 3
+    </a>
+
+    <a href="https://www.instagram.com/progamerz3_yt" target="_blank">
+      <i class="fa-brands fa-instagram"></i> Instagram (Channel)
+    </a>
+
+    <a href="https://www.instagram.com/patil_jayostu146" target="_blank">
+      <i class="fa-brands fa-instagram"></i> Instagram (Personal)
+    </a>
+
+    <a href="mailto:opjayostu@gmail.com">
+      <i class="fa-solid fa-envelope"></i> opjayostu@gmail.com
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Pro Gamerz 3. All rights reserved.</p>
+  <p>Samsung-inspired UI • Designed in India</p>
+</footer>
+
+</body>
+</html>al)</a>
+    <a href="mailto:opjayostu@gmail.com">Email: opjayostu@gmail.com</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Pro Gamerz. All rights reserved.</p>
+  <p>Samsung-inspired UI | Designed for performance</p>
+</footer>
+
+</body>
+</html>
