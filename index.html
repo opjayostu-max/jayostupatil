@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Pro Gamerz 3</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">Pro <span>Gamerz</span> 3</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="videos.html">Videos</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <button id="themeToggle">🌙</button>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Professional Gaming Creator</h1>
+    <p>Premium gaming content from India.</p>
+  </div>
+  <div id="logo3d"></div>
+</section>
+
+<!-- STATS -->
+<section class="stats-section">
+  <div class="stat-card">
+    <h2 data-count="200">0+</h2>
+    <p>Subscribers</p>
+  </div>
+  <div class="stat-card">
+    <h2 data-count="10">0+</h2>
+    <p>Videos</p>
+  </div>
+  <div class="stat-card">
+    <h2 data-count="4">0+</h2>
+    <p>Years Experience</p>
+  </div>
+  <div class="stat-card">
+    <h2>🇮🇳</h2>
+    <p>Indian Creator</p>
+  </div>
+</section>
+
+<!-- VIDEO GRID -->
+<section class="video-grid">
+  <div class="video-card">🎮 Video 1</div>
+  <div class="video-card">🔥 Video 2</div>
+  <div class="video-card">⚡ Video 3</div>
+  <div class="video-card">🚀 Video 4</div>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 Pro Gamerz 3</p>
+  <p>Premium Gaming Website</p>
+</footer>
+
+<script src="theme.js"></script>
+<script src="three-logo.js"></script>
+
+<script>
+/* AUTO COUNT */
+document.querySelectorAll("[data-count]").forEach(el=>{
+  let target=+el.dataset.count, i=0;
+  let int=setInterval(()=>{
+    i++;
+    el.textContent=i+"+";
+    if(i>=target) clearInterval(int);
+  },20);
+});
+
+/* GSAP ANIMATIONS */
+gsap.from(".hero-text",{y:40,opacity:0,duration:1});
+gsap.from(".stat-card",{y:30,opacity:0,stagger:0.15,duration:.8});
+gsap.from(".video-card",{scale:.8,opacity:0,stagger:0.1,duration:.6});
+</script>
+
+</body>
+</html>

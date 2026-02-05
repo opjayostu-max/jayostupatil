@@ -1,0 +1,136 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
+}
+
+body{
+  background:linear-gradient(#f2f2f2,#cfcfcf);
+  color:#111;
+  transition:.3s;
+}
+
+body.dark{
+  background:linear-gradient(#0d0d0d,#000);
+  color:#fff;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 22px;
+  background:rgba(0,0,0,.85);
+  position:sticky;
+  top:0;
+}
+
+.logo{
+  font-family:'Orbitron',sans-serif;
+  color:#fff;
+  font-size:20px;
+  text-shadow:0 0 15px #3b82f6;
+}
+.logo span{color:#3b82f6}
+
+nav a{
+  color:#ccc;
+  margin:0 10px;
+  text-decoration:none;
+  font-size:14px;
+}
+nav a:hover{color:#fff}
+
+#themeToggle{
+  background:none;
+  border:none;
+  font-size:18px;
+  cursor:pointer;
+  color:#fff;
+}
+
+/* HERO */
+.hero{
+  margin:20px;
+  padding:30px;
+  border-radius:20px;
+  background:rgba(255,255,255,.65);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+body.dark .hero{background:rgba(0,0,0,.7)}
+
+.hero h1{font-size:26px}
+.hero p{opacity:.8}
+
+/* STATS */
+.stats-section{
+  margin:50px 20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:20px;
+}
+
+.stat-card{
+  background:rgba(255,255,255,.75);
+  padding:26px;
+  border-radius:18px;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,.15);
+  transition:.3s;
+}
+body.dark .stat-card{background:rgba(0,0,0,.75)}
+
+.stat-card h2{
+  font-size:30px;
+  margin-bottom:6px;
+}
+
+.stat-card:hover{
+  transform:translateY(-10px) scale(1.05);
+  box-shadow:0 0 35px #3b82f6;
+}
+
+/* VIDEO GRID */
+.video-grid{
+  margin:20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.video-card{
+  background:rgba(255,255,255,.75);
+  border-radius:18px;
+  padding:50px 20px;
+  text-align:center;
+  font-weight:600;
+  transition:.3s;
+}
+body.dark .video-card{background:rgba(0,0,0,.75)}
+
+.video-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 0 30px #00f7ff;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  opacity:.7;
+  font-size:13px;
+}
+
+/* 📱 MOBILE POLISH */
+@media(max-width:700px){
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+  nav{display:none;}
+}
