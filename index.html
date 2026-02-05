@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pro Gamerz 3</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+:root {
+  --bg: #0b0b0b;
+  --card: #151515;
+  --text: #ffffff;
+  --muted: #aaaaaa;
+  --accent: #1e90ff;
+}
+
+/* Light theme */
+body.light {
+  --bg: #f4f4f4;
+  --card: rgba(255,255,255,0.8);
+  --text: #000000;
+  --muted: #555555;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+}
+
+nav h2 span {
+  color: var(--accent);
+}
+
+nav ul {
+  display: flex;
+  gap: 22px;
+  list-style: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.theme-btn {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* HERO */
+.hero {
+  padding: 80px 8% 40px;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+}
+
+.hero p {
+  margin-top: 10px;
+  color: var(--muted);
+}
+
+/* STATS BOXES */
+.stats-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+  padding: 60px 8% 80px;
+}
+
+.stat-box {
+  background: var(--card);
+  backdrop-filter: blur(14px);
+  padding: 34px 20px;
+  border-radius: 22px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-16px) scale(1.05);
+  box-shadow: 0 24px 45px rgba(0,0,0,0.45);
+}
+
+.stat-box h2 {
+  font-size: 2.4rem;
+  color: var(--accent);
+}
+
+.stat-box p {
+  margin-top: 10px;
+  color: var(--muted);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: var(--muted);
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  nav ul {
+    display: none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <h2>Pro <span>Gamerz 3</span></h2>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Videos</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <div class="theme-btn" onclick="toggleTheme()">🌙</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Professional Gaming Creator</h1>
+  <p>High-quality gaming content from India • 4+ years experience</p>
+</section>
+
+<!-- STATS -->
+<section class="stats-section">
+  <div class="stat-box">
+    <h2>200+</h2>
+    <p>Subscribers</p>
+  </div>
+
+  <div class="stat-box">
+    <h2>10+</h2>
+    <p>Videos</p>
+  </div>
+
+  <div class="stat-box">
+    <h2>4+</h2>
+    <p>Years Experience</p>
+  </div>
+
+  <div class="stat-box">
+    <h2>🇮🇳</h2>
+    <p>Indian Creator</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Pro Gamerz 3 • Designed in India
+</footer>
+
+<script>
+function toggleTheme() {
+  document.body.classList.toggle("light");
+}
+</script>
+
+</body>
+</html>
