@@ -1,0 +1,105 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* PAGE BACKGROUND */
+body {
+  background: radial-gradient(circle at top, #0f0f0f, #000);
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* HOME SECTION */
+.home-video-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* VIDEO CARD */
+.video-card {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.7),
+    0 0 25px rgba(255, 255, 255, 0.08);
+}
+
+/* VIDEO */
+.video-card video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* OVERLAY TEXT */
+.video-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0)
+  );
+  backdrop-filter: blur(6px);
+}
+
+.video-overlay h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.video-overlay p {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* MOBILE POLISH */
+@media (max-width: 480px) {
+  .video-card {
+    max-width: 100%;
+    border-radius: 16px;
+  }
+}orm: translateY(-16px) scale(1.05);
+  box-shadow: 0 24px 45px rgba(0,0,0,0.45);
+}
+
+.stat-box h2 {
+  font-size: 2.4rem;
+  color: var(--accent);
+}
+
+.stat-box p {
+  margin-top: 10px;
+  color: var(--muted);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: var(--muted);
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* MOBILE FIX */
+@media (max-width: 600px) {
+  nav ul {
+    display: none;
+  }
+}
