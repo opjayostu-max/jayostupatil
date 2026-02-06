@@ -14,191 +14,109 @@
       --muted: #aaaaaa;
       --accent: #3b82f6;
     }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
+    * { margin:0; padding:0; box-sizing:border-box; }
     body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Inter', sans-serif;
-      min-height: 100vh;
-      line-height: 1.6;
+      background:var(--bg);
+      color:var(--text);
+      font-family:'Inter',sans-serif;
+      min-height:100vh;
+      line-height:1.6;
     }
-
     nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 8%;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      position: sticky;
-      top: 0;
-      background: rgba(15, 15, 15, 0.95);
-      backdrop-filter: blur(10px);
-      z-index: 1000;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 8%;
+      border-bottom:1px solid rgba(255,255,255,0.1);
+      position:sticky;
+      top:0;
+      background:rgba(15,15,15,0.95);
+      backdrop-filter:blur(10px);
+      z-index:1000;
     }
-
-    nav h2 {
-      font-size: 1.8rem;
-      font-weight: 700;
-    }
-
-    nav h2 span {
-      color: var(--accent);
-    }
-
-    nav ul {
-      display: flex;
-      gap: 30px;
-      list-style: none;
-    }
-
+    nav h2 { font-size:1.8rem; font-weight:700; }
+    nav h2 span { color:var(--accent); }
+    nav ul { display:flex; gap:30px; list-style:none; }
     nav ul a {
-      color: var(--text);
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s;
+      color:var(--text);
+      text-decoration:none;
+      font-weight:600;
+      transition:color 0.3s;
     }
-
-    nav ul a:hover {
-      color: var(--accent);
-    }
-
+    nav ul a:hover { color:var(--accent); }
     .theme-btn {
-      background: var(--card);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      color: var(--text);
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      font-size: 1.2rem;
-      transition: all 0.3s;
+      background:var(--card);
+      border:1px solid rgba(255,255,255,0.1);
+      color:var(--text);
+      width:45px; height:45px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      cursor:pointer;
+      font-size:1.2rem;
+      transition:all 0.3s;
     }
-
-    .theme-btn:hover {
-      background: var(--accent);
-    }
-
-    .hero {
-      padding: 80px 8% 40px;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 2.4rem;
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      color: var(--muted);
-      max-width: 600px;
-      margin: 0 auto 40px;
-    }
-
-    .home-video-section {
-      padding: 40px 8%;
-      display: flex;
-      justify-content: center;
-    }
-
-    .video-container {
-      width: 100%;
-      max-width: 500px;
-      margin: 0 auto;
-    }
-
+    .theme-btn:hover { background:var(--accent); }
+    .hero { padding:80px 8% 40px; text-align:center; }
+    .hero h1 { font-size:2.4rem; font-weight:700; margin-bottom:20px; }
+    .hero p { font-size:1.2rem; color:var(--muted); max-width:600px; margin:0 auto 40px; }
+    .home-video-section { padding:40px 8%; display:flex; justify-content:center; }
+    .video-container { width:100%; max-width:500px; margin:0 auto; }
     .video-title {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: var(--accent);
-      margin-bottom: 16px;
-      text-align: center;
+      font-size:1.8rem;
+      font-weight:700;
+      color:var(--accent);
+      margin-bottom:16px;
+      text-align:center;
     }
-
     .video-card {
-      position: relative;
-      border-radius: 20px;
-      overflow: hidden;
-      background: var(--card);
-      border: 4px solid var(--accent);
-      box-shadow: 
-        0 25px 50px rgba(0, 0, 0, 0.5),
-        0 0 100px rgba(59, 130, 246, 0.3);
-      transition: transform 0.3s;
+      position:relative;
+      border-radius:20px;
+      overflow:hidden;
+      background:var(--card);
+      border:4px solid var(--accent);
+      box-shadow:0 25px 50px rgba(0,0,0,0.5),0 0 100px rgba(59,130,246,0.3);
+      transition:transform 0.3s;
     }
-
-    .video-card:hover {
-      transform: translateY(-10px);
-    }
-
+    .video-card:hover { transform:translateY(-10px); }
     .video-card video {
-      width: 100%;
-      height: auto;
-      display: block;
-      aspect-ratio: 9 / 16;
+      width:100%;
+      height:auto;
+      display:block;
+      aspect-ratio:9/16;
     }
-
     .stats-section {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 25px;
-      padding: 0 8% 80px;
-      max-width: 1200px;
-      margin: 0 auto;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:25px;
+      padding:0 8% 80px;
+      max-width:1200px;
+      margin:0 auto;
     }
-
     .stat-box {
-      background: var(--card);
-      padding: 40px 25px;
-      border-radius: 15px;
-      text-align: center;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      transition: all 0.3s ease;
+      background:var(--card);
+      padding:40px 25px;
+      border-radius:15px;
+      text-align:center;
+      border:1px solid rgba(255,255,255,0.1);
+      transition:all 0.3s ease;
     }
-
-    .stat-box:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-    }
-
-    .stat-box h2 {
-      font-size: 2.5rem;
-      color: var(--accent);
-      margin-bottom: 10px;
-    }
-
-    .stat-box p {
-      color: var(--muted);
-      font-size: 1.1rem;
-      font-weight: 600;
-    }
-
+    .stat-box:hover { transform:translateY(-5px); box-shadow:0 15px 30px rgba(0,0,0,0.3); }
+    .stat-box h2 { font-size:2.5rem; color:var(--accent); margin-bottom:10px; }
+    .stat-box p { color:var(--muted); font-size:1.1rem; font-weight:600; }
     footer {
-      text-align: center;
-      padding: 40px 8%;
-      color: var(--muted);
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align:center;
+      padding:40px 8%;
+      color:var(--muted);
+      border-top:1px solid rgba(255,255,255,0.1);
     }
-
-    @media (max-width: 768px) {
-      nav ul { display: none; }
-      .hero h1 { font-size: 2rem; }
-      .stats-section { grid-template-columns: repeat(2, 1fr); }
+    @media (max-width:768px) {
+      nav ul { display:none; }
+      .hero h1 { font-size:2rem; }
+      .stats-section { grid-template-columns:repeat(2,1fr); }
     }
-
-    @media (max-width: 480px) {
-      .stats-section { grid-template-columns: 1fr; }
-    }
+    @media (max-width:480px) { .stats-section { grid-template-columns:1fr; } }
   </style>
 </head>
 <body>
@@ -222,7 +140,6 @@
 <section class="home-video-section">
   <div class="video-container">
     <div class="video-title">My work</div>
-    
     <div class="video-card">
       <video controls preload="metadata" playsinline>
         <source src="https://raw.githack.com/opjayostu-max/jayostupatil/main/Motorsports.mp4" type="video/mp4">
@@ -266,74 +183,6 @@ function toggleTheme() {
     document.documentElement.style.setProperty('--muted', '#666666');
   } else {
     document.querySelector('.theme-btn').textContent = '🌙';
-    document.documentElement.style.setProperty('--bg', '#0f0f0f');
-    document.documentElement.style.setProperty('--card', '#151515');
-    document.documentElement.style.setProperty('--text', '#ffffff');
-    document.documentElement.style.setProperty('--muted', '#aaaaaa');
-  }
-}
-</script>
-
-</body>
-</html>d', '#151515');
-    document.documentElement.style.setProperty('--text', '#ffffff');
-    document.documentElement.style.setProperty('--muted', '#aaaaaa');
-  }
-}
-</script>
-
-</body>
-</html>Y2xpcHMuYzIuNzIwLmJhc2VsaW5lIn0%26_nc_cat%3D109%26vs%3D4456267027996181_571129474%26_nc_vs%3DHBksFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HUEctWENXWWw4VFlVQmtGQUJWeFJHX0p5QmRQYnNwVEFRQUYVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0FDNDk0OTQwOTVEODhEREIxMjgyMEJENkM5QTEyQ0FFX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwAVAAAm6KCXgLbjuj8VAigCQzMsF0AvzMzMzMzNGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHX%252BB2XmnQEA%26_nc_rid%3D383b479bb2%26ccb%3D9-4%26oh%3D00_AfvveoWNqAT7npR7TYhCIS_bdm9yuzoGNSTWwkG9JLr1VA%26oe%3D6986D13B%26_nc_sid%3Dd885a2%26dl%3D1&filename=%23%F0%9F%87%AF%F0%9F%87%B5Japan%20is%20turning%20footsteps%20into%20electricity!%20Using%20piezoelectric%20tiles%2C%20every%20step%20you%20take.mp4&ua=-&referer=https%3A%2F%2Fwww.instagram.com%2F" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="video-overlay">
-      <h2>Japan's Piezoelectric Innovation</h2>
-      <p>Turning footsteps into electricity with advanced tiles</p>
-    </div>
-  </div>
-</section>
-
-<!-- STATS SECTION -->
-<section class="stats-section">
-  <div class="stat-box">
-    <h2>200+</h2>
-    <p>Subscribers</p>
-  </div>
-  
-  <div class="stat-box">
-    <h2>10+</h2>
-    <p>Videos</p>
-  </div>
-  
-  <div class="stat-box">
-    <h2>4+</h2>
-    <p>Years Experience</p>
-  </div>
-  
-  <div class="stat-box">
-    <h2>🇮🇳</h2>
-    <p>Indian Creator</p>
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 Pro Gamerz 3 • Designed in India</p>
-</footer>
-
-<script>
-function toggleTheme() {
-  document.body.classList.toggle('light');
-  
-  if (document.body.classList.contains('light')) {
-    document.querySelector('.theme-btn').textContent = '☀️';
-    // Light theme variables
-    document.documentElement.style.setProperty('--bg', '#f5f5f5');
-    document.documentElement.style.setProperty('--card', '#ffffff');
-    document.documentElement.style.setProperty('--text', '#000000');
-    document.documentElement.style.setProperty('--muted', '#666666');
-  } else {
-    document.querySelector('.theme-btn').textContent = '🌙';
-    // Dark theme variables (default)
     document.documentElement.style.setProperty('--bg', '#0f0f0f');
     document.documentElement.style.setProperty('--card', '#151515');
     document.documentElement.style.setProperty('--text', '#ffffff');
